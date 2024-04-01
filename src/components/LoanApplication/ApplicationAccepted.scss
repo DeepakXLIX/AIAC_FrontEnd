@@ -1,0 +1,23 @@
+.applicationAccepted {
+    font-family: 'work-sans';
+    color: white;
+    margin-top: 80px;
+
+    .container {
+        display: flex;
+
+        .wrapper {
+            margin: auto;
+            text-align: center;
+
+            h2 {
+                font-weight: 700;
+                margin: 40px 0px;
+            }
+
+            p {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

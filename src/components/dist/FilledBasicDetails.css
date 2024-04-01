@@ -1,0 +1,27 @@
+.filledBasicDetails {
+  color: #FAFAFA;
+  font-family: "work-sans";
+}
+.filledBasicDetails .container .row h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.filledBasicDetails .container .row .property {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.filledBasicDetails .container .row .value {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.filledBasicDetails .container .row img {
+  max-width: 35px;
+  max-height: 35px;
+  margin-bottom: 15px;
+}
+.filledBasicDetails .container .wrapper {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=FilledBasicDetails.css.map */

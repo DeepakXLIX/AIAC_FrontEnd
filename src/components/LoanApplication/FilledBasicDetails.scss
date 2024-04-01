@@ -1,0 +1,39 @@
+.filledBasicDetails {
+    color: #FAFAFA;
+    font-family: 'work-sans';
+
+    .container {
+
+        .row {
+
+            h2 {
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .property {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+            }
+
+            .value {
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            img {
+                max-width: 35px;
+                max-height: 35px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

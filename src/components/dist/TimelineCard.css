@@ -1,0 +1,51 @@
+.timelineCard {
+  color: white;
+}
+.timelineCard .content {
+  padding: 10px 10px 5px 30px;
+  margin: 20px;
+  width: 450px;
+  border-radius: 27px;
+  border: 1px solid white;
+}
+.timelineCard .content.active {
+  background-color: rgba(233, 185, 64, 0.0705882353);
+  border: 1px solid #E89F26;
+}
+.timelineCard .content.active::before {
+  content: "";
+  border-color: #E89F26 !important;
+}
+.timelineCard .content.active::after {
+  content: "";
+  background-color: #E89F26 !important;
+}
+@media (max-width: 768px) {
+  .timelineCard .content {
+    width: auto;
+  }
+}
+.timelineCard .content h2 {
+  line-height: 50px;
+}
+@media (max-width: 768px) {
+  .timelineCard .content h2 {
+    font-size: 24px;
+  }
+}
+.timelineCard .content ul {
+  padding: 0;
+  padding-left: 5px;
+}
+.timelineCard .content ul li {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .timelineCard .content ul li {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=TimelineCard.css.map */

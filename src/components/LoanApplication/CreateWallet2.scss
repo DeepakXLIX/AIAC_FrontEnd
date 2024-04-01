@@ -1,0 +1,27 @@
+.createWallet2 {
+    color: white;
+    font-family: 'work-sans';
+    display: flex;
+    padding: 100px 0px;
+
+    .wrapper {
+        text-align: center;
+        margin: auto;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 37.54px;
+        }
+
+        p {
+            margin: 22px 0px 40px 0px;
+        }
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}

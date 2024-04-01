@@ -1,0 +1,25 @@
+.applicationSubmitted {
+  color: white;
+  font-family: "work-sans";
+  margin-top: 94px;
+}
+.applicationSubmitted .container {
+  display: flex;
+  justify-content: center;
+}
+.applicationSubmitted .container .wrapper {
+  text-align: center;
+}
+.applicationSubmitted .container .wrapper h2 {
+  margin: 40px auto 22px auto;
+  font-weight: 700;
+}
+.applicationSubmitted .container .wrapper p {
+  margin-bottom: 40px;
+  color: #FAFAFA;
+}
+.applicationSubmitted .buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}/*# sourceMappingURL=ApplicationSubmitted.css.map */

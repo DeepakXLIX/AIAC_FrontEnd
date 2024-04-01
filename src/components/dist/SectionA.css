@@ -1,0 +1,61 @@
+#sectionA {
+  padding-top: 20px;
+  position: relative;
+}
+#sectionA::after {
+  content: " ";
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  width: 322px;
+  height: 322px;
+  top: -40px;
+  right: 0px;
+  filter: blur(200px);
+  z-index: -1;
+  opacity: 0.2px;
+  overflow: hidden;
+}
+#sectionA .container .common-cls:first-child {
+  margin: auto;
+}
+#sectionA .container .common-cls:first-child h1 {
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FAFAFA;
+}
+@media (max-width: 992px) {
+  #sectionA .container .common-cls:first-child h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+#sectionA .container .common-cls:first-child h1 span {
+  color: #E89F26;
+}
+@media (max-width: 992px) {
+  #sectionA .container .common-cls:first-child h1 span {
+    font-size: 28px;
+  }
+}
+#sectionA .container .common-cls:first-child p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FAFAFA;
+}
+@media (max-width: 992px) {
+  #sectionA .container .common-cls:first-child p {
+    font-size: 14px;
+  }
+}
+#sectionA .container .common-cls:last-child img {
+  max-height: 537px;
+  max-width: 618px;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=SectionA.css.map */

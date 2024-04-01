@@ -1,0 +1,47 @@
+.applicationApproved {
+    font-family: 'work-sans';
+    color: white;
+
+    .container {
+        margin-top: 60px;
+        text-align: center;
+
+        .row:first-child {
+            .wrapper {
+                img {
+                    width: 170px;
+                    height: 170px;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    margin: 50px auto 28px auto;
+                }
+
+                p {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            width: 60%;
+            margin: auto;
+
+            .common-clsA {
+                p {
+                    margin:auto;
+                    padding-bottom: 14px;
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    img {
+                        max-width: 30px;
+                        max-height: 30px;
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

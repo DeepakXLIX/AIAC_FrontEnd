@@ -1,0 +1,129 @@
+.basicDocuments {
+    font-family: 'work-sans';
+    color: white;
+
+    .container {
+        .row:first-child {
+            .common-cls:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .innerWrapper {
+                    padding: 40px 62px 20px 62px;
+                    display: inline-block;
+                    text-align: center;
+                    background: #FFFFFF1A;
+                    border-radius: 20px;
+
+
+                    img {
+                        max-width: 93px;
+                        max-height: 93px;
+                        margin: 20px 0px;
+                    }
+
+                    h2 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            .common-cls:last-child {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                .wrapper1 {
+                    h2 {
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 37.54px;
+
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18.77px;
+                        color: #FAFAFA;
+                        margin: 0;
+                    }
+                }
+
+                .wrapper2,
+                .wrapper4,
+                .wrapper5,
+                .wrapper6 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 22px 0px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 23.46px;
+
+
+                        span {
+                            color: red;
+                        }
+                    }
+                }
+
+                .wrapper3 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 22px 0px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+                    .inside-wrapper {
+
+                        h4 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 23.46px;
+
+
+                            span {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+
+                .wrapper6 {
+                    border-bottom: none;
+                }
+
+                .wrapper5,
+                .wrapper6 {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+
+        .row:last-child {
+            padding-top: 40px;
+
+            .common-clsA:last-child {
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 37.54px;
+                }
+
+                p {
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+}

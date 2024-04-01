@@ -1,0 +1,9 @@
+.buttonClass button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 28px;
+  color: black;
+}
+.buttonClass button.btn:hover, .buttonClass button.btn:active {
+  color: black;
+}/*# sourceMappingURL=Button.css.map */

@@ -1,0 +1,62 @@
+@import './media.scss';
+
+#sectionB {
+    margin: 150px 0px 30px 0px;
+    position: relative;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        background: radial-gradient(#E89F26, transparent);
+        filter: blur(100px);
+        opacity: 0.2;
+        width: 322px;
+        height: 322px;
+        border-radius: 50%;
+        top: -20%;
+        left: -107px;
+        gap: 0px;
+        z-index: -1;
+    }
+
+    @include media(992px) {
+        margin: 50px 0px 30px 0px;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+
+        .inside-sectionB {
+            color: #FAFAFA;
+            text-align: center;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 56.3px;
+                text-align: center;
+
+                @include media(992px) {
+                    font-size: 28px;
+                    line-height: 35px;
+
+                }
+
+            }
+
+            p {
+                text-align: center;
+
+                @include media(992px) {
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+
+
+}

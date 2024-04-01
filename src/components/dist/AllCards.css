@@ -1,0 +1,24 @@
+#allcards {
+  overflow: hidden;
+  position: relative;
+}
+#allcards::before {
+  content: " ";
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  border-radius: 50%;
+  gap: 0px;
+  opacity: 0.2;
+  filter: blur(100px);
+  z-index: 10;
+  width: 322px;
+  height: 322px;
+  right: -40px;
+  bottom: 10%;
+}
+#allcards .col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}/*# sourceMappingURL=AllCards.css.map */

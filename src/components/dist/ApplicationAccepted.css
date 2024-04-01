@@ -1,0 +1,19 @@
+.applicationAccepted {
+  font-family: "work-sans";
+  color: white;
+  margin-top: 80px;
+}
+.applicationAccepted .container {
+  display: flex;
+}
+.applicationAccepted .container .wrapper {
+  margin: auto;
+  text-align: center;
+}
+.applicationAccepted .container .wrapper h2 {
+  font-weight: 700;
+  margin: 40px 0px;
+}
+.applicationAccepted .container .wrapper p {
+  margin-bottom: 40px;
+}/*# sourceMappingURL=ApplicationAccepted.css.map */

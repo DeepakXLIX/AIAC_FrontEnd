@@ -1,0 +1,32 @@
+.applicationSubmitted {
+    color: white;
+    font-family: 'work-sans';
+    margin-top: 94px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .wrapper {
+            text-align: center;
+
+            h2 {
+                margin: 40px auto 22px auto;
+                font-weight: 700;
+            }
+
+            p {
+                margin-bottom: 40px;
+                color: #FAFAFA;
+            }
+
+            
+        }
+       
+    }
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}

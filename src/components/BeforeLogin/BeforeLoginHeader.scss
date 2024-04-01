@@ -1,0 +1,17 @@
+.beforeLoginHeader {
+    border-bottom: 1px solid #FFFFFF33;
+
+    .container {
+        .wrapper {
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 153px;
+                height: 56px;
+            }
+        }
+    }
+}

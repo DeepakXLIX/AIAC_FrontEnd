@@ -1,0 +1,43 @@
+.stakeHolderDetails {
+    font-family: 'work-sans';
+    color: white;
+
+    .heading {
+        h2 {
+            margin: 84px 0px 27px auto;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 37.54px;
+        }
+
+    }
+
+    .common-cls {
+        margin-bottom: 28px;
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18.77px;
+
+            span {
+                color: red;
+            }
+        }
+
+        input {
+            background: transparent;
+            color: #FAFAFA;
+            border: 1px solid #FFFFFF4D;
+            border-radius: 6px;
+            width: Fixed (558px)px;
+            height: Fixed (55px)px;
+            padding: 10px 14px;
+            width: 100%;
+        }
+    }
+    .btnWrapper{
+        display: flex;
+        gap: 10px;
+    }
+}

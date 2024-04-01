@@ -1,0 +1,180 @@
+#main-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#main-wrapper .outer-timeLinewrapper {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  #main-wrapper .outer-timeLinewrapper #circle-wrapper {
+    display: none;
+  }
+}
+#main-wrapper .outer-timeLinewrapper #circle-wrapper li:nth-child(1) {
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  width: 322px;
+  height: 322px;
+  border-radius: 50%;
+  top: 20rem;
+  left: -30%;
+  filter: blur(200px);
+  z-index: 10;
+  opacity: 0.2px;
+}
+#main-wrapper .outer-timeLinewrapper #circle-wrapper li:nth-child(2) {
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  width: 322px;
+  height: 322px;
+  border-radius: 50%;
+  top: 35rem;
+  right: -10%;
+  filter: blur(200px);
+  z-index: 10;
+  opacity: 0.2px;
+}
+#main-wrapper .outer-timeLinewrapper #circle-wrapper li:nth-child(3) {
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  width: 322px;
+  height: 322px;
+  border-radius: 50%;
+  bottom: 20rem;
+  right: -10%;
+  filter: blur(200px);
+  z-index: 10;
+  opacity: 0.2px;
+}
+#main-wrapper .outer-timeLinewrapper #circle-wrapper li:nth-child(4) {
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  width: 322px;
+  height: 322px;
+  border-radius: 50%;
+  top: 100rem;
+  left: -20%;
+  filter: blur(200px);
+  z-index: 10;
+  opacity: 0.2px;
+}
+#main-wrapper .outer-timeLinewrapper #circle-wrapper li:nth-child(5) {
+  position: absolute;
+  background: radial-gradient(#E89F26, transparent);
+  width: 322px;
+  height: 322px;
+  border-radius: 50%;
+  bottom: 0;
+  left: -20%;
+  filter: blur(200px);
+  z-index: 10;
+  opacity: 0.2px;
+}
+#main-wrapper .outer-timeLinewrapper .timeLine {
+  width: 420px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#main-wrapper .outer-timeLinewrapper .timeLine::after {
+  content: "";
+  position: absolute;
+  top: 130px;
+  width: 4px;
+  height: calc(100% - 260px);
+  background-color: white;
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine::after {
+    display: none;
+  }
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine {
+  border: 1px solid transparent;
+  z-index: 5;
+  position: relative;
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .left {
+  position: relative;
+  right: 55%;
+  z-index: 1;
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .left {
+    position: static;
+  }
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .left::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: -12%;
+  top: calc(50% - 20px);
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .left::before {
+    display: none;
+  }
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .left::after {
+  z-index: -1;
+  content: "";
+  height: 4px;
+  width: 54px;
+  background-color: white;
+  position: absolute;
+  top: calc(50% - 18px + 5px);
+  right: -12%;
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .left::after {
+    display: none;
+  }
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .right {
+  position: relative;
+  left: 55%;
+  z-index: 2;
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .right {
+    position: static;
+  }
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .right::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: calc(50% - 20px);
+  left: -12%;
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .right::before {
+    display: none;
+  }
+}
+#main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .right::after {
+  z-index: -1;
+  content: "";
+  height: 4px;
+  width: 54px;
+  background-color: white;
+  position: absolute;
+  bottom: calc(50% - 18px + 5px);
+  left: -12%;
+}
+@media (max-width: 1000px) {
+  #main-wrapper .outer-timeLinewrapper .timeLine .inside-timeLine .right::after {
+    display: none;
+  }
+}/*# sourceMappingURL=Timeline.css.map */

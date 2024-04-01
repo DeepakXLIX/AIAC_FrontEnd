@@ -1,0 +1,51 @@
+#horizontalTL {
+  margin: 49px auto 100px auto;
+}
+#horizontalTL .wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1077px;
+  padding: 0;
+}
+#horizontalTL .wrapper li {
+  flex: 1;
+  position: relative;
+  list-style-type: none;
+  color: white;
+}
+#horizontalTL .wrapper li::before {
+  content: "";
+  height: 5px;
+  width: calc(100% - 92px);
+  background: #E89F26;
+  border-radius: 6px;
+  position: absolute;
+  top: 32px;
+  transform: translateY(-50%);
+  right: 15px;
+}
+#horizontalTL .wrapper li .circle {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  border-radius: 75px;
+  background: #E89F26;
+}
+#horizontalTL .wrapper li .circle img {
+  margin: auto;
+  width: 32px;
+  height: 28.19px;
+  opacity: 0px;
+}
+#horizontalTL .wrapper li p {
+  position: absolute;
+  display: inline-block;
+  margin-top: 12px;
+  width: -moz-max-content;
+  width: max-content;
+  transform: translateX(-25%);
+}
+#horizontalTL .wrapper li:last-child {
+  flex: 0;
+}/*# sourceMappingURL=HorizontalTL.css.map */

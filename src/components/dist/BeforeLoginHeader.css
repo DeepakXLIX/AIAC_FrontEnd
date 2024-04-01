@@ -1,0 +1,13 @@
+.beforeLoginHeader {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.beforeLoginHeader .container .wrapper {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.beforeLoginHeader .container .wrapper img {
+  width: 153px;
+  height: 56px;
+}/*# sourceMappingURL=BeforeLoginHeader.css.map */

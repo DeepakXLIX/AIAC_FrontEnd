@@ -1,0 +1,56 @@
+@import './media.scss';
+
+#card {
+    color: #FAFAFA;
+    width: 364px;
+    height: 435px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #FFFFFF4A;
+    box-shadow: 0px 4px 49.5px 0px #0000001C;
+    background: #FFFFFF0F;
+    overflow: hidden;
+
+ 
+
+    .image-wrapper {
+        width: 364px;
+        height: 242px;
+        background-size: 100%;
+        background-position: center center;
+    }
+
+    &:hover {
+        border: 1px solid #E89F26;
+        background: #E89F260F;
+        transition: all 0.3s;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28.15px;
+        text-align: left;
+        margin: 5px 20px;
+
+        @include media(768px) {
+            font-size: 20px;
+        }
+
+    }
+
+    p {
+        margin: 20px 10px 50px 10px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18.77px;
+        text-align: left;
+        opacity: 0.8;
+
+        @include media(992px) {
+            font-size: 14px;
+        }
+
+        // border: 1px solid red;
+    }
+}
