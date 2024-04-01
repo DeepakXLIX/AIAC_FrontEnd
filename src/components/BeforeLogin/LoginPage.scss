@@ -1,0 +1,24 @@
+.loginPage {
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .wrapper {
+
+            max-width:80%;
+            margin-top: 50px;
+            h2 {
+
+                span {
+                    color: #BF7C24;
+                }
+            }
+
+            p {
+                color: rgb(255, 255, 255, 0.6);
+            }
+        }
+    }
+}

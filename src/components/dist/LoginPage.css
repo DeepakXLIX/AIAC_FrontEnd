@@ -1,0 +1,18 @@
+.loginPage {
+  color: white;
+}
+.loginPage .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.loginPage .container .wrapper {
+  max-width: 80%;
+  margin-top: 50px;
+}
+.loginPage .container .wrapper h2 span {
+  color: #BF7C24;
+}
+.loginPage .container .wrapper p {
+  color: rgba(255, 255, 255, 0.6);
+}/*# sourceMappingURL=LoginPage.css.map */
