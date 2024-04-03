@@ -1,0 +1,20 @@
+.tokenManagement {
+  color: white;
+}
+.tokenManagement .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tokenManagement .container .wrapper {
+  margin-top: 180px;
+  text-align: center;
+}
+.tokenManagement .container .wrapper img {
+  max-width: 132px;
+  max-height: 132px;
+  margin-bottom: 35px;
+}
+.tokenManagement .container .wrapper h2 {
+  margin-bottom: 42px;
+}/*# sourceMappingURL=TokenManagement.css.map */

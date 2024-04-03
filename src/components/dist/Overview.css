@@ -1,0 +1,31 @@
+.overview {
+  color: white;
+  margin-top: 30px;
+}
+.overview .container .data {
+  max-width: 650px;
+}
+.overview .container .data .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.overview .container .data .wrapper h2 {
+  margin-bottom: 32px;
+}
+.overview .container .data .wrapper p {
+  margin-bottom: 30px;
+}
+.overview .container .data .wrapper p:last-child {
+  width: -moz-max-content;
+  width: max-content;
+}
+.overview .container .btn-wrapper button {
+  background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.overview .container .btn-wrapper button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}/*# sourceMappingURL=Overview.css.map */

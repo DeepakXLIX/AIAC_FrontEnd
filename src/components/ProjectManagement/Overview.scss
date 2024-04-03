@@ -1,0 +1,44 @@
+.overview {
+    color: white;
+    margin-top: 30px;
+
+    .container {
+
+        .data {
+            max-width: 650px;
+
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                h2 {
+                    margin-bottom: 32px;
+                }
+
+                p {
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        width: max-content;
+                    }
+                }
+            }
+        }
+
+        .btn-wrapper {
+            button {
+                background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
+                font-weight: 500;
+                padding: 10px 30px;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    margin-right:10px ;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.tokenManagement {
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            margin-top: 180px;
+            text-align: center;
+
+
+            img {
+                max-width: 132px;
+                max-height: 132px;
+                margin-bottom: 35px;
+            }
+
+            h2 {
+                margin-bottom: 42px;
+            }
+        }
+    }
+}

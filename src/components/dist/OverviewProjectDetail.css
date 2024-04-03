@@ -1,0 +1,21 @@
+.overviewProjectDetail {
+  color: white;
+}
+.overviewProjectDetail .container h2 {
+  margin-top: 30px;
+}
+.overviewProjectDetail .container .wrapper {
+  margin-top: 31px;
+}
+.overviewProjectDetail .container .wrapper p {
+  font-weight: 600;
+}
+.overviewProjectDetail .container .wrapper textarea {
+  background: #323232;
+  color: white;
+  resize: none;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+}/*# sourceMappingURL=OverviewProjectDetail.css.map */

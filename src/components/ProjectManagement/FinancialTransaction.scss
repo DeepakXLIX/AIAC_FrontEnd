@@ -1,0 +1,57 @@
+.financialTransaction {
+    color: white;
+
+    .container {
+        .wrapper {
+            margin: 30px 0px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .row {
+            background-color: #323232;
+            border-radius: 10px;
+
+            .common-cls {
+
+                &:first-child,
+                &:nth-child(2) {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
+                &:first-child {
+                    margin-top: 23px;
+                }
+
+                &:nth-child(2) {
+                    margin-top: 34px;
+                    display: flex;
+                    align-items: center;
+
+                    select {
+                        margin-top: -10px;
+                        border-radius: 20px;
+                        background: transparent;
+                        color: white;
+                        padding: 0px 10px;
+                        height: 35px;
+
+                        option {
+                            background-color: #1E1E1E;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin: 30px 0px;
+                    text-align: center;
+                    h4{
+                        font-weight: normal;
+                    }
+                }
+
+            }
+        }
+    }
+}

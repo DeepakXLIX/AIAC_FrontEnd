@@ -1,0 +1,42 @@
+.financialTransaction {
+  color: white;
+}
+.financialTransaction .container .wrapper {
+  margin: 30px 0px;
+  display: flex;
+  gap: 16px;
+}
+.financialTransaction .container .row {
+  background-color: #323232;
+  border-radius: 10px;
+}
+.financialTransaction .container .row .common-cls:first-child, .financialTransaction .container .row .common-cls:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+.financialTransaction .container .row .common-cls:first-child {
+  margin-top: 23px;
+}
+.financialTransaction .container .row .common-cls:nth-child(2) {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+}
+.financialTransaction .container .row .common-cls:nth-child(2) select {
+  margin-top: -10px;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  padding: 0px 10px;
+  height: 35px;
+}
+.financialTransaction .container .row .common-cls:nth-child(2) select option {
+  background-color: #1E1E1E;
+}
+.financialTransaction .container .row .common-cls:last-child {
+  margin: 30px 0px;
+  text-align: center;
+}
+.financialTransaction .container .row .common-cls:last-child h4 {
+  font-weight: normal;
+}/*# sourceMappingURL=FinancialTransaction.css.map */

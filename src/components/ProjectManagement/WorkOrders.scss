@@ -1,0 +1,50 @@
+.workOrders {
+    color: white;
+
+    .container {
+        .wrapper {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0px;
+        }
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+
+        img {
+            width: 75px;
+            height: 76px;
+            margin-bottom: 23px;
+        }
+
+        .button-wrapper {
+            margin-bottom: 40px;
+
+            button {
+                background-color: #1E1E1E;
+                border: none;
+                padding: 5px 20px;
+                border-radius: 20px;
+                background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+
+            span {
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.tokenTransfer {
+  color: white;
+  margin: 30px 0px;
+}
+.tokenTransfer .container .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.tokenTransfer .container .wrapper h2 {
+  font-weight: 600;
+}
+.tokenTransfer .container p {
+  margin: 0;
+  padding: 0;
+}
+.tokenTransfer .container p button {
+  outline: none;
+  border: none;
+  background: #1E1E1E;
+}
+.tokenTransfer .container p button img {
+  margin: 2px;
+  margin-top: -2px;
+  width: 14px;
+  height: 14px;
+}
+.tokenTransfer .container h3 {
+  margin: 30px 0px;
+  font-weight: 400;
+}
+.tokenTransfer .container .row {
+  margin-bottom: 40px;
+}
+.tokenTransfer .container .row input,
+.tokenTransfer .container .row select {
+  width: 100%;
+  height: 46px;
+  padding: 0px 18px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  color: white;
+}
+.tokenTransfer .container .row input option,
+.tokenTransfer .container .row select option {
+  background: #1E1E1E;
+}
+.tokenTransfer .container .row input:focus,
+.tokenTransfer .container .row select:focus {
+  outline: none;
+}/*# sourceMappingURL=TokenTransfer.css.map */
