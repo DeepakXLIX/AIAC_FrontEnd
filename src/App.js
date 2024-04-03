@@ -1,13 +1,11 @@
-import BeforeLoginFooter from "components/BeforeLogin/BeforeLoginFooter";
+import ProjectManagementHeader from "components/ProjectManagement/ProjectManagementHeader";
 import "./App.css";
-import BeforeLoginHeader from "components/BeforeLogin/BeforeLoginHeader";
-import Register from "components/BeforeLogin/Register";
-import LoginPage from "components/BeforeLogin/LoginPage";
+import ProjectManagementSidebar from "components/ProjectManagement/ProjectManagementSidebar";
 function App() {
   return (
     <div >
-      <BeforeLoginHeader />
-      <LoginPage/>
+      <ProjectManagementHeader />
+      <ProjectManagementSidebar />
     </div>
   );
 }

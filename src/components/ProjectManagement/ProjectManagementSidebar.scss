@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import '../dist/media.css';
+
+.projectManagementSidebar {
+    background-color: #2D2D2D;
+    max-width: 300px;
+
+    @media (max-width:991px) {
+        max-width: 50px;
+
+        &:hover {
+            max-width: 250px;
+        }
+    }
+
+    padding-top: 50px;
+
+    ul {
+        height: calc(100vh - 90px);
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+
+        @media (max-width:991px) {
+            padding-right: 0px;
+        }
+
+        &:hover li a p {
+            display: block;
+        }
+
+        li {
+            list-style-type: none;
+
+
+
+            a {
+                border-radius: 0px 13px 13px 0px;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                display: block;
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    background: #E89F26;
+                    color: black
+                }
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                    margin-right: 5px;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+
+                    @media (max-width:991px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

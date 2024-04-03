@@ -1,0 +1,32 @@
+.projectManagementHeader {
+    .navbar {
+        background: #2D2D2D;
+        border-bottom: 1px solid #FFFFFF54;
+        height: 90px;
+
+        .navbar-collapse{
+            background-color:#2D2D2D ;
+            text-align: center!important;
+        }
+            .navbar-brand {
+                img {
+                    width: 153px;
+                    height: 56px;
+                    top: 17px;
+                    left: 63px;
+                    gap: 0px;
+                    opacity: 0px;
+                }
+            }
+
+            .navbar-nav .nav-link {
+                font-weight: 500;
+                color: white;
+
+                &:hover {
+                    color: #E89F26;
+                }
+            }
+    }
+
+}

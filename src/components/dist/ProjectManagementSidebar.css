@@ -1,0 +1,64 @@
+@import '../dist/media.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.projectManagementSidebar {
+  background-color: #2D2D2D;
+  max-width: 300px;
+  padding-top: 50px;
+}
+@media (max-width: 991px) {
+  .projectManagementSidebar {
+    max-width: 50px;
+  }
+  .projectManagementSidebar:hover {
+    max-width: 250px;
+  }
+}
+.projectManagementSidebar ul {
+  height: calc(100vh - 90px);
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .projectManagementSidebar ul {
+    padding-right: 0px;
+  }
+}
+.projectManagementSidebar ul:hover li a p {
+  display: block;
+}
+.projectManagementSidebar ul li {
+  list-style-type: none;
+}
+.projectManagementSidebar ul li a {
+  border-radius: 0px 13px 13px 0px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.projectManagementSidebar ul li a:hover {
+  background: #E89F26;
+  color: black;
+}
+.projectManagementSidebar ul li a img {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.projectManagementSidebar ul li a p {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  .projectManagementSidebar ul li a p {
+    display: none;
+  }
+}/*# sourceMappingURL=ProjectManagementSidebar.css.map */
