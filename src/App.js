@@ -1,8 +1,6 @@
 import ProjectManagementHeader from "components/ProjectManagement/ProjectManagementHeader";
 import "./App.css";
-import TokenTransfer from "components/ProjectManagement/TokenTransfer";
-import FinancialTransaction from "components/ProjectManagement/FinancialTransaction";
-import WorkOrders from "components/ProjectManagement/WorkOrders";
+import OngoingReport from "components/ProjectManagement/OngoingReport";
 function App() {
   return (
     <div >
