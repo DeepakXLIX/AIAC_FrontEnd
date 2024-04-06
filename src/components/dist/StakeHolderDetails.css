@@ -1,6 +1,7 @@
 .stakeHolderDetails {
   font-family: "work-sans";
   color: white;
+  margin-bottom: 50px;
 }
 .stakeHolderDetails .heading h2 {
   margin: 84px 0px 27px auto;

@@ -57,6 +57,7 @@ function BasicDocuments() {
                         <div className="wrapper1">
                             <h2>Other Supporting Documents <br />(optional)</h2>
                             <p>Supporting Documents</p>
+                            <input type="text" placeholder='Document Name' />
                         </div>
                     </div>
                 </div>

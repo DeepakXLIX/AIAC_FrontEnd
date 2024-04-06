@@ -2,6 +2,7 @@ import React from 'react';
 import walletImg from '../../assest/AIACHomePageIMG/Loan application/imgExp.png'
 import '../dist/FilledBasicDetails.css'
 import Button from './Button';
+import { NavLink } from 'react-router-dom';
 
 const FilledBasicDetails = () => {
     let FilledData = {
@@ -177,10 +178,6 @@ const FilledBasicDetails = () => {
                         <p>{FilledData.StakeholderDetails['Company']}</p>
                     </div>
                 </div>
-                {/* <div className="wrapper">
-                    <Button text={"Back"} bgPar={"#FAFAFA24"} textColor={"#FAFAFA"} />
-                    <Button text={"Save and Next"} />
-                </div> */}
             </div>
         </div>
     );

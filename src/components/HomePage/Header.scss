@@ -31,11 +31,14 @@
 
             li {
 
-                a {
+                .nav-link {
                     color: #FAFAFA;
 
+                    &.not-active {
+                        color: #FAFAFA;
+                    }
 
-                    &:hover {
+                    &.active {
                         color: #E89F26;
                     }
                 }
@@ -44,7 +47,8 @@
 
         .imgWrapper {
             padding-left: 20px;
-            @include media(991px){
+
+            @include media(991px) {
                 padding-left: 0px;
             }
 

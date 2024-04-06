@@ -1,5 +1,5 @@
 import '../dist/SectionB.css'
-function SectionB({ heading = "Heading", conWidth = "100px", content = "Content", }) {
+function SectionB({ heading = "Heading", conWidth = "auto", content = "Content", }) {
     return (
         <div id='sectionB'>
             <div className='container'>

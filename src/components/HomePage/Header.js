@@ -1,6 +1,7 @@
 import '../dist/Header.css';
 import logo from "../../assest/AIACHomePageIMG/HomeImg/aiaclogo (1) 2.png"
 import iconImg from "../../assest/AIACHomePageIMG/HomeImg/myFrame1.png"
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -15,24 +16,31 @@ function Header() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="#">Home</a>
+                                    <NavLink to="/" className={({ isActive }) => `nav-link
+${isActive ? "active" : "not-active"} `} aria-current="page" href="#">Home
+                                    </NavLink>
+
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="#">Loan Application</a>
+                                    <NavLink to="/loanApplication/basicDetails" className={({ isActive }) => `nav-link
+${(isActive) ? "active" : "not-active"} `} aria-current="page" href="#">Loan Application
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="#">Project Management</a>
+                                    <NavLink to="/projectManagement" className={({ isActive }) => `nav-link
+${(isActive) ? "active" : "not-active"} `} aria-current="page" href="#">Project management
+                                    </NavLink>
                                 </li>
 
                             </ul>
                             <div className='imgWrapper'>
-                                <img  className="img-fluid" src={iconImg}></img>
+                                <img className="img-fluid" src={iconImg}></img>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div>
+                </nav >
+            </div >
+        </div >
     )
 }
 

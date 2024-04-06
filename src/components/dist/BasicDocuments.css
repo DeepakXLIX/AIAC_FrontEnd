@@ -96,4 +96,13 @@
 }
 .basicDocuments .container .row:last-child .common-clsA:last-child p {
   margin-top: 22px;
+}
+.basicDocuments .container .row:last-child .common-clsA:last-child input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  background: transparent;
+  color: white;
 }/*# sourceMappingURL=BasicDocuments.css.map */

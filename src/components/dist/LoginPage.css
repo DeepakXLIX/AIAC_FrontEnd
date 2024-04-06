@@ -18,17 +18,58 @@
 .loginPage .container .outsideWrapper .wrapper p {
   color: rgba(255, 255, 255, 0.6);
 }
-.loginPage .container .outsideWrapper .inside-con {
+.loginPage .container .loginWrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin: 5px 0px;
 }
-.loginPage .container .outsideWrapper .inside-con label {
+.loginPage .container .loginWrapper .insideLoginWrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 500px;
+  text-align: center;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper h2 {
+  margin: 37px 0px 20px 0px;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper p {
+  margin: 20px 0px 36px 0px;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center {
+  width: 352px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center .inputLoginWrapper {
+  margin-bottom: 16px;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center .inputLoginWrapper label {
+  display: block;
+  width: 100%;
   text-align: left;
 }
-.loginPage .container .outsideWrapper .inside-con input {
-  padding: 2px 10px;
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center .inputLoginWrapper input {
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2392156863);
+  background: transparent;
+  border-radius: 6px;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center .inputLoginWrapper input:focus {
   outline: none;
 }
-.loginPage .container .outsideWrapper .inside-con p {
-  text-align: right;
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center .forgotPass {
+  display: flex;
+  justify-content: end;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center .forgotPass p {
+  margin: 0;
+  padding: 0;
+}
+.loginPage .container .loginWrapper .insideLoginWrapper .to-center button {
+  width: 100%;
 }/*# sourceMappingURL=LoginPage.css.map */

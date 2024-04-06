@@ -3,6 +3,7 @@ import '../dist/ApplicationApproved.css'
 import approvedImg from '../../assest/AIACHomePageIMG/Loan application/approve.png'
 import mark from '../../assest/AIACHomePageIMG/Loan application/mark.png'
 import Button from './Button'
+import { NavLink } from 'react-router-dom'
 
 function ApplicationApproved() {
     return (
@@ -25,7 +26,9 @@ function ApplicationApproved() {
                         <p><img src={mark} alt="" />Previous Year Balance Sheet.</p>
                     </div>
                 </div>
-                <Button text={"View Application"} />
+                <NavLink to='../applicationPreview'>
+                    <Button text={"View Application"} />
+                </NavLink>
             </div>
         </div>
     )

@@ -24,10 +24,13 @@
 #header .container-xxl ul {
   gap: 12px;
 }
-#header .container-xxl ul li a {
+#header .container-xxl ul li .nav-link {
   color: #FAFAFA;
 }
-#header .container-xxl ul li a:hover {
+#header .container-xxl ul li .nav-link.not-active {
+  color: #FAFAFA;
+}
+#header .container-xxl ul li .nav-link.active {
   color: #E89F26;
 }
 #header .container-xxl .imgWrapper {

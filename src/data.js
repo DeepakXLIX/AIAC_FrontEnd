@@ -3,7 +3,7 @@ let data = {
         {
             heading: "How AIAC Ecosystem works?",
             content: "“AIAC - Facilitating powerful synergies between graduates, universities, and industry, fostering innovation, enriching education, and catalysing real-world progress.",
-            width: "calc((700px / 100vw) * 700)"
+            width: "678px"
             
         },
         {

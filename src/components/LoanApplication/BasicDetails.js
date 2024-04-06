@@ -1,6 +1,7 @@
 import React from 'react'
 import '../dist/BasicDetails.css'
 import Button from './Button'
+import { NavLink } from 'react-router-dom'
 
 function BasicDetails() {
     return (
@@ -107,7 +108,9 @@ function BasicDetails() {
                         </div>
                     </div>
                 </div>
-                <Button  text="Save and Next"/>
+                <NavLink to='../createWallet1'>
+                    <Button text="Save and Next" />
+                </NavLink>
             </div>
         </div>
     )

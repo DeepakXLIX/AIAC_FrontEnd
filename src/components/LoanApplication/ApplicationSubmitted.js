@@ -2,6 +2,7 @@ import React from 'react';
 import Allsvgs from 'svgs';
 import '../dist/ApplicationSubmitted.css'
 import Button from './Button';
+import { NavLink } from 'react-router-dom';
 
 const ApplicationSubmitted = () => {
     return (
@@ -18,9 +19,17 @@ const ApplicationSubmitted = () => {
                     </div>
                     <div className="col-12">
                         <div className="buttonWrapper">
-                            <Button text={"View Status"} />
-                            <Button text={"View Application"} />
-                            <Button text={"Withdraw Application"} />
+                            <NavLink to='../applicationApproved'>
+                                <Button text={"View Status"} />
+                            </NavLink >
+
+                            <NavLink to='../applicationPreview'>
+                                <Button text={"View Application"} />
+                            </NavLink>
+
+                            <NavLink to='../basicDetails'>
+                                <Button text={"Withdraw Application"} />
+                            </NavLink>
                         </div>
                     </div>
                 </div>

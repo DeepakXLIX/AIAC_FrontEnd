@@ -1,6 +1,7 @@
 import React from 'react'
 import '../dist/StakeHolderDetails.css'
 import Button from './Button'
+import { NavLink } from 'react-router-dom'
 
 function StakeHolderDetails() {
     return (
@@ -32,8 +33,14 @@ function StakeHolderDetails() {
                     </div>
                 </div>
                 <div className="btnWrapper">
-                    <Button text={"Back"} bgPar={"#FAFAFA24"} textColor={"white"} />
-                    <Button text={"Save and Next"} />
+
+                    <NavLink to='../fullBasicDocx'>
+                        <Button text={"Back"} bgPar={"#FAFAFA24"} textColor={"white"} />
+                    </NavLink>
+
+                    <NavLink to='../filledBasicDetails'>
+                        <Button text={"Save and Next"} />
+                    </NavLink>
                 </div>
             </div>
         </div>
