@@ -2,8 +2,11 @@ import React from 'react'
 import FilledBasicDetails from './FilledBasicDetails'
 import { NavLink } from 'react-router-dom'
 import Button from './Button'
+
 import '../dist/FilledBasicDetailsWithBtn.css'
+
 function FilledBAsicDetailsWithBtn() {
+   
     return (
         <div className='filledBasicDetailsWithBtn'>
             <FilledBasicDetails />
@@ -13,7 +16,7 @@ function FilledBAsicDetailsWithBtn() {
                     <NavLink to='../fullBasicDocx'>
                         <Button text={"Back"} bgPar={"#FAFAFA24"} textColor={"#FAFAFA"} />
                     </NavLink>
-                    <NavLink to='../applicationSubmitted'>
+                    <NavLink to='../../applicationSubmitted'>
                         <Button text={"Save and Next"} />
                     </NavLink>
                 </div>

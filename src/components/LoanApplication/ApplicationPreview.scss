@@ -1,11 +1,23 @@
+@import '../media.scss';
+
 .applicationPreview {
     font-family: 'work-sans';
     color: white;
+    margin-bottom: 40px;
+
 
     h1 {
         font-size: 36px;
         font-weight: 700;
         line-height: 42.23px;
         margin-bottom: 35px;
+
+        @include max_media(768px) {
+            font-size: 28px;
+        }
+        @include max_media(576px) {
+            font-size: 24px;
+        }
     }
+
 }

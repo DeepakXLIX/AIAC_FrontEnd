@@ -1,10 +1,21 @@
 .applicationPreview {
   font-family: "work-sans";
   color: white;
+  margin-bottom: 40px;
 }
 .applicationPreview h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 42.23px;
   margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .applicationPreview h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .applicationPreview h1 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=ApplicationPreview.css.map */

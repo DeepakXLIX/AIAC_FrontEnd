@@ -1,9 +1,21 @@
 .ongoingReport {
   color: white;
+  font-size: 8px;
+}
+@media (max-width: 992px) {
+  .ongoingReport {
+    font-size: 7px;
+  }
+}
+@media (max-width: 768px) {
+  .ongoingReport {
+    font-size: 6px;
+  }
 }
 .ongoingReport h2 {
   margin: 30px 0px 31px 0px;
   font-weight: 600;
+  font-size: 3.2em;
 }
 .ongoingReport .container {
   margin-top: 33px;
@@ -14,8 +26,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.3215686275);
 }
 .ongoingReport .container .row .common-cls {
-  font-size: 20px;
   font-weight: 600;
+}
+.ongoingReport .container .row .common-cls p {
+  font-weight: 400;
+  font-size: 2.5em;
 }
 .ongoingReport .container .row .common-cls:last-child {
   display: flex;
@@ -40,6 +55,7 @@
   margin: 40px 0px 50px 0px;
 }
 .ongoingReport .container p {
+  font-size: 2em;
   margin: 12px 0px 20px 0px;
 }
 .ongoingReport .container .con {
@@ -55,15 +71,24 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 14px;
+  padding: 4px 14px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.08);
   width: 236px;
 }
+@media (max-width: 768px) {
+  .ongoingReport .container .con .wrapper .wrapper-child {
+    padding: 0px 10px;
+  }
+}
 .ongoingReport .container .con .wrapper .wrapper-child p {
-  width: 236px;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  padding: 2px 14px;
+  font-size: 2em;
+}
+@media (max-width: 768px) {
+  .ongoingReport .container .con .wrapper .wrapper-child p {
+    width: 236px;
+    font-weight: 600;
+    text-align: center;
+  }
 }/*# sourceMappingURL=OngoingReport.css.map */

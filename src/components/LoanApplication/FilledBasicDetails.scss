@@ -1,25 +1,32 @@
+@import '../media.scss';
+
 .filledBasicDetails {
     color: #FAFAFA;
     font-family: 'work-sans';
 
     .container {
+        font-size: 5px;
+        @include max_media(992px){
+            font-size: 4px;
+        }
 
         .row {
 
             h2 {
+                font-size: 6em;
                 font-weight: 700;
                 margin-bottom: 30px;
             }
 
             .property {
-                font-size: 20px;
+                font-size: 4em;
                 font-weight: 600;
                 margin-bottom: 10px;
 
             }
 
             .value {
-                font-size: 20px;
+                font-size: 4em;
                 font-weight: 400;
                 margin-bottom: 10px;
             }

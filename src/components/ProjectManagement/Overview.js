@@ -1,8 +1,11 @@
 import React from 'react'
 import '../dist/Overview.css'
 import editSymbol from '../../assest/AIACHomePageIMG/edit.png'
+import { NavLink } from 'react-router-dom';
 
 function Overview() {
+
+
     return (
         <div className='overview'>
             <div className="container">
@@ -10,15 +13,15 @@ function Overview() {
                 <div className="data">
                     <div className="wrapper">
                         <p>Objective</p>
-                        <p>No objective added yet</p>
+                        <p>No objective <br /> added yet</p>
                     </div>
                     <div className="wrapper">
                         <p>Hypothesis</p>
-                        <p>No objective added yet</p>
+                        <p>No objective <br /> added yet</p>
                     </div>
                     <div className="wrapper">
                         <p>Description</p>
-                        <p>No description added yet</p>
+                        <p>No description  <br />added yet</p>
                     </div>
                 </div>
                 <h2>New Knowledge</h2>
@@ -28,10 +31,11 @@ function Overview() {
                     </div>
                 </div>
                 <div className="btn-wrapper">
-
-                    <button className='btn  rounded-pill'>
-                        <img src={editSymbol} alt="" />Edit
-                    </button>
+                    <NavLink to='../overviewProjectDetails'>
+                        <button className='btn rounded-pill'>
+                            <img src={editSymbol} alt="" />Edit
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </div>

@@ -1,10 +1,24 @@
+@import '../media.scss';
+
 .ongoingReport {
     color: white;
+    font-size: 8px;
+
+    @include max_media(992px) {
+
+     font-size: 7px;
+    }
+    @include max_media(768px) {
+
+     font-size: 6px;
+    }
 
     h2 {
         margin: 30px 0px 31px 0px;
         font-weight: 600;
+        font-size: 3.2em;
     }
+
 
     .container {
         margin-top: 33px;
@@ -15,11 +29,14 @@
             border-bottom: 1px solid #FFFFFF52;
 
             .common-cls {
-                font-size: 20px;
                 font-weight: 600;
 
+                p {
+                    font-weight: 400;
+                    font-size: 2.5em;
+                }
+
                 &:last-child {
-                    //    border: 1px solid green;
                     display: flex;
                     justify-content: end;
                     align-items: center;
@@ -48,6 +65,7 @@
         }
 
         p {
+            font-size: 2em;
             margin: 12px 0px 20px 0px;
         }
 
@@ -64,17 +82,25 @@
                     flex: 1;
                     display: flex;
                     justify-content: center;
-                    padding: 14px;
+                    padding: 4px 14px;
                     border-radius: 12px;
                     background: rgba(255, 255, 255, 0.08);
                     width: 236px;
 
+                    @include max_media(768px) {
+
+                        padding: 0px 10px;
+                    }
+
                     p {
-                        width: 236px;
-                        font-weight: 600;
-                        margin: 0;
-                        padding: 0;
-                        text-align: center;
+                        padding: 2px 14px;
+                        font-size: 2em;
+
+                        @include max_media(768px) {
+                            width: 236px;
+                            font-weight: 600;
+                            text-align: center;
+                        }
                     }
                 }
             }

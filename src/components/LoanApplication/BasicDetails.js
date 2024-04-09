@@ -1,9 +1,9 @@
 import React from 'react'
 import '../dist/BasicDetails.css'
-import Button from './Button'
-import { NavLink } from 'react-router-dom'
+import { Form, NavLink, redirect } from 'react-router-dom'
 
 function BasicDetails() {
+
     return (
         <div id='basicDetails'>
             <div className="container">
@@ -12,108 +12,114 @@ function BasicDetails() {
                         <h2>Basic Details</h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="common-cls col-6">
-                        <form action="">
+                <Form method='post' action='/loanApplication/basicDetails'>
+                    <div className="row">
+                        <div className="common-cls col-12 col-md-6">
                             <label >Company Name <span>*</span></label>
-                            <input type="text" placeholder='Google' required />
-                        </form>
-                    </div>
-                    <div className="common-cls col-6">
-                        <form action="">
+                            <input type="text" name='companyName' placeholder='Google' required />
+                        </div>
+                        <div className="common-cls col-12 col-md-6">
                             <label >Industry</label>
-                            <select name="" id="">
+                            <select name="industry" id="">
                                 <option value="OtherServices" >Other Services</option>
                                 <option value="Service1">Service1</option>
                                 <option value="Service2">Service2</option>
                                 <option value="Service3">Service3</option>
                             </select>
-                        </form>
+                        </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="common-cls col-6">
-                        <form action="">
+                    <div className="row">
+                        <div className="common-cls col-12 col-md-6">
                             <label >Director Name <span>*</span></label>
-                            <input type="text" placeholder='Floyd Miles' required />
-                        </form>
-                    </div>
-                    <div className="common-cls col-6">
-                        <form action="">
-                            <label >Industry</label>
-                            <select name="" id="">
-                                <option value="1 Year">1 Year</option>
-                                <option value="2 Year">2 Year</option>
-                                <option value="3 Year">3 Year</option>
-                                <option value="4 Year">4 Year</option>
+                            <input type="text" style={{ background: "transparent" }} name='directorName' placeholder='Floyd Miles' required autoFocus="red" />
+                        </div>
+                        <div className="common-cls col-12 col-md-6">
+                            <label >Years</label>
+                            <select name="years" id="">
+                                <option className='d' value="1 Year">1 Year</option>
+                                <option className='d' value="2 Year">2 Year</option>
+                                <option className='d' value="3 Year">3 Year</option>
+                                <option className='d' value="4 Year">4 Year</option>
                             </select>
-                        </form>
+                        </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="common-cls col-6">
-                        <form action="">
+                    <div className="row">
+                        <div className="common-cls col-12 col-md-6">
                             <label >Address<span>*</span></label>
-                            <input type="text" placeholder='Google Address' required />
-                        </form>
-                    </div>
-                    <div className="common-cls col-6">
-                        <form action="">
-                            <label >Size of Organisation</label>
-                            <select name="" id="">
+                            <input type="text" name='address' placeholder='Google Address' required />
+                        </div>
+                        <div className="common-cls col-12 col-md-6">
+                            <label >Size of Organization</label>
+                            <select name="sizeOfOrganization" id="">
                                 <option value="10+">10+ </option>
                                 <option value="20+">20+ </option>
                                 <option value="30+">30+ </option>
                                 <option value="40+">40+ </option>
                             </select>
-                        </form>
+                        </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="common-cls col-6">
-                        <form action="">
+                    <div className="row">
+                        <div className="common-cls col-12 col-md-6">
                             <label >Phone Number<span>*</span></label>
-                            <input type="text" placeholder='+91 76010123459' required />
-                        </form>
-                    </div>
-                    <div className="common-cls col-6">
-                        <form action="">
+                            <input type="text" name='phoneNumber' placeholder='+91 76010123459' required />
+                        </div>
+                        <div className="common-cls col-12 col-md-6">
                             <label >ABN<span>*</span></label>
-                            <input type="text" placeholder='3654736576' required />
-                        </form>
+                            <input type="text" name='Abn' placeholder='3654736576' required />
+                        </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="common-cls col-6">
-                        <form action="">
+                    <div className="row">
+                        <div className="common-cls col-12 col-md-6">
                             <label >Email<span>*</span></label>
-                            <input type="text" placeholder='abcd@gmail.com' required />
-                        </form>
-                    </div>
-                    <div className="common-cls col-6  ">
-                        <p>Does this company fall under an ultimate holding company? If yes, an independent review must be manually conducted.*</p>
-                        <div className="wrapper-text">
-                            <div class="form-check  ">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Yes
-                                </label>
-                            </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                                <label class="form-check-label" for="exampleRadios2">
-                                    No
-                                </label>
+                            <input type="text" name='email' placeholder='abcd@gmail.com' required />
+                        </div>
+                        <div className="common-cls col-12 col-md-6 ">
+                            <p>Does this company fall under an ultimate holding company? If yes, an independent review must be manually conducted.*</p>
+                            <div className="wrapper-text">
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" defaultChecked />
+                                    <label className="form-check-label" htmlFor="exampleRadios1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                                    <label className="form-check-label" htmlFor="exampleRadios2">
+                                        No
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <NavLink to='../createWallet1'>
-                    <Button text="Save and Next" />
-                </NavLink>
+                    <div className="small_scr">
+                        <button>Save and Next</button>
+                    </div>
+                </Form>
             </div>
-        </div>
+        </div >
     )
 }
 
 export default BasicDetails
+
+export let details;
+export const allBasicDetails = async ({ request }) => {
+    const data = await request.formData();
+
+    details = {
+        companyName: data.get('companyName'),
+        industry: data.get('industry'),
+        directorName: data.get('directorName'),
+        years: data.get('years'),
+        address: data.get('address'),
+        sizeOfOrganization: data.get('sizeOfOrganization'),
+        phoneNumber: data.get('phoneNumber'),
+        Abn: data.get('Abn'),
+        email: data.get('email'),
+        radio:data.get('exampleRadios')
+
+    }
+    
+    console.log(details);
+    return redirect('../createWallet1');
+}

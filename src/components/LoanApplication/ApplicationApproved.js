@@ -27,7 +27,8 @@ function ApplicationApproved() {
                     </div>
                 </div>
                 <NavLink to='../applicationPreview'>
-                    <Button text={"View Application"} />
+                    <div className="wrapper">
+                    </div>
                 </NavLink>
             </div>
         </div>

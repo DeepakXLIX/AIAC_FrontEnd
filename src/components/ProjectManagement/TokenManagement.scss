@@ -1,3 +1,5 @@
+@import '../media.scss';
+
 .tokenManagement {
     color: white;
 
@@ -7,7 +9,11 @@
         align-items: center;
 
         .wrapper {
-            margin-top: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 120px;
             text-align: center;
 
 
@@ -15,10 +21,27 @@
                 max-width: 132px;
                 max-height: 132px;
                 margin-bottom: 35px;
+
+                @include max_media(768px) {
+                    max-width: 100px;
+                    max-height: 100px;
+                }
             }
 
             h2 {
                 margin-bottom: 42px;
+
+                @include max_media(992px) {
+                    font-size: 24px;
+                }
+
+                @include max_media(768px) {
+                    font-size: 20px;
+                }
+
+                @include max_media(768px) {
+                    font-size: 16px;
+                }
             }
         }
     }

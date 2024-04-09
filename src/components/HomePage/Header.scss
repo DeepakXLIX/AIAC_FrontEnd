@@ -11,6 +11,16 @@
         padding: 0px 20px;
         border-radius: 40px;
 
+        #mytoggleBtn {
+            border: 0.1px solid white;
+
+
+            &:focus {
+                box-shadow: none;
+                border: 2px solid white;
+            }
+        }
+
         img:first-child {
             height: 100%;
             width: 100%;
@@ -21,12 +31,15 @@
 
                 max-height: 50px;
                 max-width: 100px;
-
             }
-
         }
 
         ul {
+            @include media(992px) {
+                margin-top: 12px;
+
+            }
+
             gap: 12px;
 
             li {

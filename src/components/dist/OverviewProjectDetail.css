@@ -6,6 +6,8 @@
 }
 .overviewProjectDetail .container .wrapper {
   margin-top: 31px;
+  display: flex;
+  flex-direction: column;
 }
 .overviewProjectDetail .container .wrapper p {
   font-weight: 600;

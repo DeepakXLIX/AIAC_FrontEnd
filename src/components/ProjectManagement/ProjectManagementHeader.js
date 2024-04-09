@@ -1,6 +1,7 @@
 import React from 'react'
 import '../dist/ProjectManagementHeader.css'
-import LogoImg from '../../assest/AIACHomePageIMG/Project Management/aiaclogo.png' 
+import LogoImg from '../../assest/AIACHomePageIMG/Project Management/aiaclogo.png'
+import { NavLink } from 'react-router-dom'
 function ProjectManagementHeader() {
     return (
         <div className='projectManagementHeader'>
@@ -15,14 +16,20 @@ function ProjectManagementHeader() {
                     <div className="collapse navbar-collapse myclass" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mx-auto mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link " aria-current="page" href="#">Home</a>
+                                <NavLink to='../../' className="nav-link " aria-current="page" >
+                                    Home
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Loan Application</a>
+                                <NavLink  to='../../loanApplication/basicDetails'  className="nav-link">
+                                    Loan Application
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Project Management</a>
+                                <NavLink to='#' className="nav-link">
+                                    Project Management
+                                </NavLink>
                             </li>
 
                         </ul>

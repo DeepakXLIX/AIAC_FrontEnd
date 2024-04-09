@@ -1,7 +1,6 @@
 import React from 'react';
 import Allsvgs from 'svgs';
 import '../dist/ApplicationSubmitted.css'
-import Button from './Button';
 import { NavLink } from 'react-router-dom';
 
 const ApplicationSubmitted = () => {
@@ -17,24 +16,22 @@ const ApplicationSubmitted = () => {
                             <p>Your Application is Being Reviewed. Our Business and Super Admin teams are currently evaluating your submission. <br /> Please allow 4-7 business days for this process. We appreciate your patience and will update you shortly.</p>
                         </div>
                     </div>
-                    <div className="col-12">
+                    <div className="con-wrapper col-12">
                         <div className="buttonWrapper">
                             <NavLink to='../applicationApproved'>
-                                <Button text={"View Status"} />
+                                <button>View Status</button>
                             </NavLink >
 
                             <NavLink to='../applicationPreview'>
-                                <Button text={"View Application"} />
+                                <button>View Application</button>
                             </NavLink>
 
-                            <NavLink to='../basicDetails'>
-                                <Button text={"Withdraw Application"} />
+                            <NavLink to='../loanApplication/basicDetails'>
+                                <button>Withdraw Application</button>
                             </NavLink>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

@@ -1,3 +1,5 @@
+@import '../media.scss';
+
 .applicationSubmitted {
     color: white;
     font-family: 'work-sans';
@@ -11,6 +13,12 @@
         .wrapper {
             text-align: center;
 
+            br {
+                @include max_media(768px) {
+                    display: none;
+                }
+            }
+
             h2 {
                 margin: 40px auto 22px auto;
                 font-weight: 700;
@@ -20,14 +28,43 @@
                 margin-bottom: 40px;
                 color: #FAFAFA;
             }
-
-            
         }
-       
-    }
-    .buttonWrapper {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
+
+
+        .con-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .buttonWrapper {
+
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                width: max-content;
+
+                @include max_media(768px) {
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+
+                    @include media(768px) {
+                        width: max-content;
+                    }
+
+                    button {
+                        padding: 8px 20px;
+                        width: 100%;
+                        border: none;
+                        border-radius: 20px;
+                        background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
+                    }
+                }
+            }
+        }
+
     }
 }

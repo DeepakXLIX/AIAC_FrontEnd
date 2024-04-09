@@ -34,7 +34,7 @@ function StakeHolderDetails() {
                 </div>
                 <div className="btnWrapper">
 
-                    <NavLink to='../fullBasicDocx'>
+                    <NavLink to='../createWallet2'>
                         <Button text={"Back"} bgPar={"#FAFAFA24"} textColor={"white"} />
                     </NavLink>
 

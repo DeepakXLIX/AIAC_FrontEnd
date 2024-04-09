@@ -19,6 +19,14 @@
   width: -moz-max-content;
   width: max-content;
 }
+.overview .container .data .wrapper p:last-child br {
+  display: none;
+}
+@media (max-width: 576px) {
+  .overview .container .data .wrapper p:last-child br {
+    display: inline-block;
+  }
+}
 .overview .container .btn-wrapper button {
   background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
   font-weight: 500;

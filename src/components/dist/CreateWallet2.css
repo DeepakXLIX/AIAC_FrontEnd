@@ -2,22 +2,34 @@
   color: white;
   font-family: "work-sans";
   display: flex;
-  padding: 100px 0px;
+  padding: 0px;
 }
 .createWallet2 .wrapper {
   text-align: center;
   margin: auto;
+  font-size: 8px;
+}
+@media (max-width: 768px) {
+  .createWallet2 .wrapper {
+    font-size: 5px;
+  }
 }
 .createWallet2 .wrapper h2 {
-  font-size: 32px;
+  font-size: 4em;
   font-weight: 700;
   line-height: 37.54px;
 }
 .createWallet2 .wrapper p {
+  font-size: 2em;
   margin: 22px 0px 40px 0px;
 }
 .createWallet2 .buttonWrapper {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+@media (max-width: 576px) {
+  .createWallet2 .buttonWrapper {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=CreateWallet2.css.map */

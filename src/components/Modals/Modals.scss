@@ -1,0 +1,30 @@
+.modalWrapper {
+    background: #2D2D2D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.072);
+
+    .modal {
+        text-align: center;
+
+        img {
+            max-width: 93px;
+            max-height: 93px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 22px 0px;
+        }
+
+        button {
+            margin: 22px 0px;
+            width: 100%;
+        }
+    }
+}

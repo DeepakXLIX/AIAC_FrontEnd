@@ -1,3 +1,5 @@
+@import '../media.scss';
+
 .applicationApproved {
     font-family: 'work-sans';
     color: white;
@@ -13,6 +15,12 @@
                     height: 170px;
                 }
 
+                br {
+                    @include media(768px) {
+                        display: none;
+                    }
+                }
+
                 h2 {
                     font-weight: 700;
                     margin: 50px auto 28px auto;
@@ -25,23 +33,36 @@
         }
 
         .row:nth-child(2) {
-            width: 60%;
-            margin: auto;
 
             .common-clsA {
                 p {
-                    margin:auto;
+                    margin: auto;
                     padding-bottom: 14px;
                     font-size: 20px;
                     font-weight: 600;
 
+                    @include max_media(576px) {
+                        font-size: 14px;
+                    }
+
                     img {
                         max-width: 30px;
                         max-height: 30px;
+
+                        @include max_media(576px) {
+                            max-width: 20px;
+                            max-height:20px;
+                        }
+
                         margin: 0px 10px;
                     }
                 }
             }
         }
+
+        .wrapper {
+            margin: 50px 0px;
+        }
     }
+
 }

@@ -11,6 +11,11 @@
 .applicationSubmitted .container .wrapper {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .applicationSubmitted .container .wrapper br {
+    display: none;
+  }
+}
 .applicationSubmitted .container .wrapper h2 {
   margin: 40px auto 22px auto;
   font-weight: 700;
@@ -19,8 +24,37 @@
   margin-bottom: 40px;
   color: #FAFAFA;
 }
-.applicationSubmitted .buttonWrapper {
+.applicationSubmitted .container .con-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.applicationSubmitted .container .con-wrapper .buttonWrapper {
   display: flex;
   justify-content: center;
   gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .applicationSubmitted .container .con-wrapper .buttonWrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.applicationSubmitted .container .con-wrapper .buttonWrapper a {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .applicationSubmitted .container .con-wrapper .buttonWrapper a {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+.applicationSubmitted .container .con-wrapper .buttonWrapper a button {
+  padding: 8px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
 }/*# sourceMappingURL=ApplicationSubmitted.css.map */

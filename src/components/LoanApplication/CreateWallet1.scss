@@ -1,3 +1,5 @@
+@import '../media.scss';
+
 .createWallet {
     margin: 100px 0px;
     color: white;
@@ -8,6 +10,16 @@
         flex-direction: column;
         align-items: center;
 
+        font-size: 8px;
+        @include max-media(768px)
+        {
+            font-size: 6px;
+        }
+        @include max-media(576px)
+        {
+            font-size: 5px;
+        }
+
         img {
             max-height: 153px;
             max-width: 123px;
@@ -15,13 +27,13 @@
         }
 
         p {
-            font-size: 24px;
+            font-size: 3em;
             font-weight: 500;
             line-height: 28.15px;
         }
 
         h2 {
-            font-size: 32px;
+            font-size: 4em;
             font-weight: 700;
             line-height: 37.54px;
         }

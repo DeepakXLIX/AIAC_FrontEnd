@@ -4,6 +4,16 @@
   padding: 10px 28px;
   color: black;
 }
+@media (max-width: 768px) {
+  .buttonClass button {
+    padding: 8px 50px !important;
+  }
+}
+@media (max-width: 576px) {
+  .buttonClass button {
+    padding: 8px 20px !important;
+  }
+}
 .buttonClass button.btn:hover, .buttonClass button.btn:active {
   color: black;
 }/*# sourceMappingURL=Button.css.map */

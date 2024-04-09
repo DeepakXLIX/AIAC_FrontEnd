@@ -1,7 +1,11 @@
 import '../dist/OngoingReport.css'
 import addImg from '../../assest/AIACHomePageIMG/plus.png'
 import Button from 'components/LoanApplication/Button'
+
+
+
 function OngoingReport() {
+
     return (
         <div className='ongoingReport'>
             <div className="container">

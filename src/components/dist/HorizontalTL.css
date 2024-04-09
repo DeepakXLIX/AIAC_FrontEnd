@@ -1,6 +1,11 @@
 #horizontalTL {
   margin: 49px auto 100px auto;
 }
+@media (max-width: 768px) {
+  #horizontalTL {
+    margin: 40px auto 50px auto;
+  }
+}
 #horizontalTL .wrapper {
   margin: auto;
   display: flex;
@@ -18,33 +23,62 @@
   content: "";
   height: 5px;
   width: calc(100% - 92px);
-  background: #E89F26;
+  background: #2F2F2F;
   border-radius: 6px;
   position: absolute;
   top: 32px;
   transform: translateY(-50%);
   right: 15px;
 }
+@media (max-width: 768px) {
+  #horizontalTL .wrapper li::before {
+    display: none;
+  }
+}
+#horizontalTL .wrapper li.filled_line::before {
+  background: #E89F26;
+}
 #horizontalTL .wrapper li .circle {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 62px;
   height: 62px;
   border-radius: 75px;
-  background: #E89F26;
+  background-color: #2F2F2F;
+}
+#horizontalTL .wrapper li .circle.filled_circle {
+  background-color: #E89F26;
+}
+@media (max-width: 768px) {
+  #horizontalTL .wrapper li .circle {
+    width: 50px;
+    height: 50px;
+  }
+}
+#horizontalTL .wrapper li .circle p {
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
 }
 #horizontalTL .wrapper li .circle img {
-  margin: auto;
   width: 32px;
   height: 28.19px;
-  opacity: 0px;
 }
-#horizontalTL .wrapper li p {
+#horizontalTL .wrapper li > p {
   position: absolute;
   display: inline-block;
   margin-top: 12px;
   width: -moz-max-content;
   width: max-content;
   transform: translateX(-25%);
+}
+@media (max-width: 768px) {
+  #horizontalTL .wrapper li > p {
+    display: none;
+  }
 }
 #horizontalTL .wrapper li:last-child {
   flex: 0;

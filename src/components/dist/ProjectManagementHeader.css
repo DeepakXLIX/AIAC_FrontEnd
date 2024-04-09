@@ -1,3 +1,7 @@
+.projectManagementHeader {
+  position: relative;
+  z-index: 999;
+}
 .projectManagementHeader .navbar {
   background: #2D2D2D;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3294117647);

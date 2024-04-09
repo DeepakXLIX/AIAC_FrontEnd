@@ -11,7 +11,7 @@ const CreateWallet1 = () => {
                 <div className="row">
                     <div className="col">
                         <div className="wrapper">
-                            <img src={moneyBox} alt="" />
+                            <img src={moneyBox} className='img-fluid' alt="" />
                             <p>Keep Your Digital Assets Here</p>
                             <h2>Floydmilesgoogle@gmail.com</h2>
                             <NavLink to='../createWallet2'>

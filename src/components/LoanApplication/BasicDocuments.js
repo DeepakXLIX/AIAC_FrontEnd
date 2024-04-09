@@ -10,9 +10,9 @@ function BasicDocuments() {
         <div className='basicDocuments'>
             <div className="container">
                 <div className="row">
-                    <div className=" common-cls col-12 col-md-6 ">
+                    <div className=" common-cls col-12 col-lg-6 ">
                         <div className="innerWrapper">
-                            <img src={uploadImg} alt="" />
+                            <img src={uploadImg} className='img-fluid' alt="" />
                             <h2>
                                 Drag and Drop File <br />
                                 Or
@@ -20,7 +20,7 @@ function BasicDocuments() {
                             <Button padding={"10px 100px"} text={"Browse File"} />
                         </div>
                     </div>
-                    <div className=" common-cls col-12 col-md-6  text-white">
+                    <div className=" common-cls col-12 col-lg-6  text-white">
                         <div className="wrapper1">
                             <h2>Basic Documents</h2>
                             <p>Note: Kindly submit your document in one of the following formats: JPG, JPEG, PNG, XLSX, PDF or DOCX.</p>

@@ -1,0 +1,41 @@
+.fullProjectManagementPage .headerWrapper {
+  z-index: 999;
+  position: sticky;
+  top: 0px;
+}
+.fullProjectManagementPage .headerNotIncluded {
+  position: relative;
+  z-index: 1;
+}
+.fullProjectManagementPage .headerNotIncluded .container-fluid {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1400px) {
+  .fullProjectManagementPage .headerNotIncluded .container-fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+.fullProjectManagementPage .headerNotIncluded .container-fluid .wrapper {
+  display: flex;
+}
+.fullProjectManagementPage .headerNotIncluded .container-fluid .wrapper .sidebarWrapper {
+  position: sticky;
+  z-index: 999;
+  top: 90px;
+  height: calc(100vh - 90px);
+}
+.fullProjectManagementPage .headerNotIncluded .container-fluid .wrapper .cover {
+  width: 100%;
+  padding: 30px 20px;
+}
+@media (max-width: 768px) {
+  .fullProjectManagementPage .headerNotIncluded .container-fluid .wrapper .cover {
+    padding: 30px 0;
+  }
+}/*# sourceMappingURL=Layout3.css.map */

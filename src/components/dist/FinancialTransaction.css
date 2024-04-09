@@ -1,10 +1,12 @@
 .financialTransaction {
   color: white;
+  width: 100%;
 }
 .financialTransaction .container .wrapper {
   margin: 30px 0px;
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 .financialTransaction .container .row {
   background-color: #323232;
@@ -12,7 +14,8 @@
 }
 .financialTransaction .container .row .common-cls:first-child, .financialTransaction .container .row .common-cls:nth-child(2) {
   display: flex;
-  justify-content: space-evenly;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 .financialTransaction .container .row .common-cls:first-child {
   margin-top: 23px;

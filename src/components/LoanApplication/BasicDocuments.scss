@@ -1,3 +1,5 @@
+@import '../media.scss';
+
 .basicDocuments {
     font-family: 'work-sans';
     color: white;
@@ -9,8 +11,14 @@
                 align-items: center;
                 justify-content: center;
 
+
                 .innerWrapper {
                     padding: 40px 62px 20px 62px;
+
+                    @include max_media(992px) {
+                        padding: 20px 40px;
+                    }
+
                     display: inline-block;
                     text-align: center;
                     background: #FFFFFF1A;
@@ -21,13 +29,31 @@
                         max-width: 93px;
                         max-height: 93px;
                         margin: 20px 0px;
+
+                        @include max_media(992px) {
+                            max-width: 50px;
+                            max-height: 50px;
+                        }
                     }
 
                     h2 {
                         font-size: 32px;
+
+                        @include max_media(768px) {
+                            font-size: 24px;
+                        }
+
+                        @include max_media(5768px) {
+                            font-size: 20px;
+                        }
+
                         font-weight: 600;
                         line-height: 40px;
                     }
+                }
+
+                @include max_media(992px) {
+                    margin-bottom: 40px;
                 }
             }
 
@@ -38,15 +64,26 @@
                 }
 
                 .wrapper1 {
+                    font-size: 8px;
+
+                    @include max_media(992px) {
+                        font-size: 7px;
+                    }
+
                     h2 {
-                        font-size: 32px;
+                        font-size: 4em;
+
+                        @include max_media(576px) {
+                          font-size: 3.5em;
+                        }
+
                         font-weight: 700;
                         line-height: 37.54px;
 
                     }
 
                     p {
-                        font-size: 16px;
+                        font-size: 2em;
                         font-weight: 400;
                         line-height: 18.77px;
                         color: #FAFAFA;
@@ -66,6 +103,12 @@
 
                     h4 {
                         font-size: 20px;
+
+                        @include max_media(992px) {
+                            font-size: 16px;
+
+                        }
+
                         font-weight: 600;
                         line-height: 23.46px;
 
@@ -87,6 +130,11 @@
 
                         h4 {
                             font-size: 20px;
+
+                            @include max_media(992px) {
+                                font-size: 16px;
+                            }
+
                             font-weight: 600;
                             line-height: 23.46px;
 
@@ -116,6 +164,12 @@
 
                 h2 {
                     font-size: 32px;
+
+                    @include max_media(992px) {
+
+                        font-size: 24px;
+                    }
+
                     font-weight: 700;
                     line-height: 37.54px;
                 }

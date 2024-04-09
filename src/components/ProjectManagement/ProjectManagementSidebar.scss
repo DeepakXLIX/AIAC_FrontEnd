@@ -3,21 +3,16 @@
     padding: 0;
 }
 
-@import '../dist/media.css';
+@import '../media.scss';
 
 .projectManagementSidebar {
     background-color: #2D2D2D;
     max-width: 300px;
-
-    @media (max-width:991px) {
-        max-width: 50px;
-
-        &:hover {
-            max-width: 250px;
-        }
-    }
-
     padding-top: 50px;
+
+    @include max_media(992px) {
+        max-width: 50px;
+    }
 
     ul {
         height: calc(100vh - 90px);
@@ -25,32 +20,47 @@
         padding: 0;
         padding-right: 20px;
 
-        @media (max-width:991px) {
-            padding-right: 0px;
-        }
-
-        &:hover li a p {
-            display: block;
-        }
 
         li {
             list-style-type: none;
 
-
-
             a {
+                pointer-events: auto;
                 border-radius: 0px 13px 13px 0px;
                 padding: 10px 20px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 display: block;
                 text-decoration: none;
                 color: white;
                 display: flex;
                 align-items: center;
+                height: 50px;
+                position: relative;
+                pointer-events: auto;
+                width: 260px;
 
-                &:hover {
+                @include max_media(992px) {
+                    width: 50px;
+                }
+
+
+                button {
+                    @include media(992px) {
+                        display: none;
+                    }
+
+                    border: 1px solid red;
+                    position: absolute;
+                    left: 0;
+                    background: transparent;
+                    border: none;
+                }
+
+
+                &:hover,
+                &:hover::before {
                     background: #E89F26;
-                    color: black
+                    color: black;
                 }
 
                 img {
@@ -63,7 +73,7 @@
                     margin: 0;
                     padding: 0;
 
-                    @media (max-width:991px) {
+                    @include max_media(992px) {
                         display: none;
                     }
                 }

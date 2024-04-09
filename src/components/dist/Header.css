@@ -9,6 +9,13 @@
   padding: 0px 20px;
   border-radius: 40px;
 }
+#header .container-xxl #mytoggleBtn {
+  border: 0.1px solid white;
+}
+#header .container-xxl #mytoggleBtn:focus {
+  box-shadow: none;
+  border: 2px solid white;
+}
 #header .container-xxl img:first-child {
   height: 100%;
   width: 100%;
@@ -23,6 +30,11 @@
 }
 #header .container-xxl ul {
   gap: 12px;
+}
+@media (max-width: 992px) {
+  #header .container-xxl ul {
+    margin-top: 12px;
+  }
 }
 #header .container-xxl ul li .nav-link {
   color: #FAFAFA;
