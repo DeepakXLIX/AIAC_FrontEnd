@@ -4,27 +4,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.072);
+    text-align: center;
+    position: relative;
+    img:first-child{
+        position: absolute;
+        background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
+        border-radius: 50%;
+        top:10px;
+        right: 10px;
+        padding: 4px;
+        height: 30px ;
+        width: 30px;
+    }
 
-    .modal {
+    img {
+        max-width: 93px;
+        max-height: 93px;
+    }
+
+    h2 {
         text-align: center;
+        margin: 22px 0px;
+    }
 
-        img {
-            max-width: 93px;
-            max-height: 93px;
-        }
-
-        h2 {
-            text-align: center;
-            margin: 22px 0px;
-        }
-
-        button {
-            margin: 22px 0px;
-            width: 100%;
-        }
+    button {
+        margin: 22px 0px;
+        max-width: 250px;
+        width: 100%;
+        background: linear-gradient(149.94deg, #F7DF2E -20.28%, #BF7C24 91.35%);
+       
+        border: none;
+        padding: 10px 10px;
+        border-radius: 20px;
+        font-weight: 500;
     }
 }

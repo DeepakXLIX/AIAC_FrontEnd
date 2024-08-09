@@ -46,8 +46,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .ongoingReport .container .row .common-cls .img-wrapper img {
+  position: absolute;
   max-width: 25px;
   max-height: 20px;
 }

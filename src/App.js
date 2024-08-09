@@ -30,7 +30,7 @@ const router = createBrowserRouter(
           <Route path="basicDetails" element={<BasicDetails />} action={allBasicDetails} />
           <Route path="createWallet1" element={<CreateWallet1 />} />
           <Route path="createWallet2" element={<CreateWallet2 />} />
-          <Route path="fullBasicDocx" element={<FullBasicDocx />} />
+          <Route path="fullBaicDocx" element={<FullBasicDocx />} />
           <Route path="filledBasicDetails" element={<FilledBAsicDetailsWithBtn />} />
         </Route>
         <Route path="applicationSubmitted" element={<ApplicationSubmitted />} />

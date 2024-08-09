@@ -16,7 +16,7 @@ function BasicDetails() {
                     <div className="row">
                         <div className="common-cls col-12 col-md-6">
                             <label >Company Name <span>*</span></label>
-                            <input type="text" name='companyName' placeholder='Google' required />
+                            <input type="text" name='companyName' placeholder='Google' autoFocus required  />
                         </div>
                         <div className="common-cls col-12 col-md-6">
                             <label >Industry</label>
@@ -31,7 +31,7 @@ function BasicDetails() {
                     <div className="row">
                         <div className="common-cls col-12 col-md-6">
                             <label >Director Name <span>*</span></label>
-                            <input type="text" style={{ background: "transparent" }} name='directorName' placeholder='Floyd Miles' required autoFocus="red" />
+                            <input type="text" style={{ background: "transparent" }} name='directorName' placeholder='Floyd Miles' required  />
                         </div>
                         <div className="common-cls col-12 col-md-6">
                             <label >Years</label>

@@ -1,6 +1,7 @@
 import '../dist/OngoingReport.css'
 import addImg from '../../assest/AIACHomePageIMG/plus.png'
 import Button from 'components/LoanApplication/Button'
+import Modals from 'components/Modals/Modals'
 
 
 
@@ -17,6 +18,7 @@ function OngoingReport() {
                     <div className="common-cls col-6">
                         <div className="img-wrapper">
                             <img src={addImg} alt="" />
+                            <Modals/>
                         </div>
                     </div>
                 </div>
@@ -26,7 +28,10 @@ function OngoingReport() {
                     </div>
                     <div className="common-cls col-6">
                         <div className="img-wrapper">
+
                             <img src={addImg} alt="" />
+                            <Modals/>
+
                         </div>
                     </div>
                 </div>
@@ -37,6 +42,8 @@ function OngoingReport() {
                     <div className="common-cls col-6">
                         <div className="img-wrapper">
                             <img src={addImg} alt="" />
+                            <Modals/>
+
                         </div>
                     </div>
                 </div>
@@ -47,6 +54,8 @@ function OngoingReport() {
                     <div className="common-cls col-6">
                         <div className="img-wrapper">
                             <img src={addImg} alt="" />
+                            <Modals/>
+
                         </div>
                     </div>
                 </div>

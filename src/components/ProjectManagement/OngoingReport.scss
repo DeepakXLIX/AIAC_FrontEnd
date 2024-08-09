@@ -52,7 +52,9 @@
                     justify-content: center;
                     align-items: center;
 
+                    position: relative;;
                     img {
+                        position: absolute;
                         max-width: 25px;
                         max-height: 20px;
                     }

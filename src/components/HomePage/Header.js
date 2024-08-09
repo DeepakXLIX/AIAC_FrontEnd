@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         <div id='header'>
-            <div className='container-xxl'>
+            <div className='container'>
                 <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
                     <div className="container-fluid">
                         <img className='img-fluid' src={logo} alt='logo' />
